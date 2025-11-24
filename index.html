@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <title>Ремесленная ярмарка - Уникальные изделия ручной работы</title>
+</head>
+<body>
+  
+    <h1>Ремесленная ярмарка - Уникальные изделия ручной работы</h1>
+     <img src="c:\Users\ASUS FX506\Downloads\centrproektnojjdejatelnosti-c0640e3bd9e3b0d170919f4f31fb91f2.jpg" alt="Логотип" class="logo">
+    
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-content">
+            <h1>Откройте мир авторских изделий</h1>
+            <p>Поддержите талантливых мастеров и найдите неповторимые вещи, созданные с любовью и вниманием к деталям.</p>
+            <div class="btn-group">
+                <button class="btn btn-primary" id="startShoppingBtn">Начать покупки</button>
+                <button class="btn btn-secondary" id="becomeSellerBtn">Стать продавцом</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Статистика -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <span class="stat-number">5000+</span>
+                <span class="stat-label">Товаров</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">1200+</span>
+                <span class="stat-label">Мастеров</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Довольных клиентов</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Категории товаров -->
+    <section class="container">
+        <h2 class="section-title">Категории товаров</h2>
+        <p class="section-subtitle">Исследуйте разнообразие ремесленных изделий</p>
+        
+        <div class="categories">
+            <div class="category-card" data-category="ceramics">
+                <div class="category-icon"><img src=https://i.pinimg.com/236x/1c/c3/7f/1cc37f509f048babc03c04a888eca0e4.jpg?nii=t></div>
+                <div class="category-name">Посуда из керамики</div>
+                <div class="category-count">801 товаров</div>
+            </div>
+            <div class="category-card" data-category="jewelry">
+                <div class="category-icon"><img src=https://i.pinimg.com/236x/77/12/4f/77124f67ea0ae395d55aa74c9afbc5b1.jpg?nii=t></div>
+                <div class="category-name">Украшения</div>
+                <div class="category-count">1251 товаров</div>
+            </div>
+            <div class="category-card" data-category="textile">
+                <div class="category-icon"><img src=https://i.pinimg.com/236x/40/39/1a/40391aee8d5e3dce634b6bd3e763a992.jpg?nii=t></div>
+                <div class="category-name">Текстиль</div>
+                <div class="category-count">100+ товаров</div>
+            </div>
+            <div class="category-card" data-category="wood">
+                <div class="category-icon"><img src=https://i.pinimg.com/236x/aa/1e/56/aa1e561cea80f91761c6c55e0bb7b68f.jpg></div>
+                <div class="category-name">Дерево</div>
+                <div class="category-count">420+ товаров</div>
+            </div>
+            <div class="category-card" data-category="decor">
+                <div class="category-icon"><img src=https://i.pinimg.com/236x/50/ce/d1/50ced1b14ac6cbbb6d597ab92c006f97.jpg?nii=t></div>
+                <div class="category-name">Изделия для декора</div>
+                <div class="category-count">700+ товаров</div>
+            </div>
+            <div class="category-card" data-category="clothing">
+                <div class="category-icon"><img src=https://i.pinimg.com/236x/e8/3a/03/e83a03685675972ac8d161f3556b3841.jpg?nii=t></div>
+                <div class="category-name">Аксессуары</div>
+                <div class="category-count">450+ товаров</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Фильтры -->
+    <section class="container">
+        <div class="filters">
+            <div class="filter-group">
+                <label for="categoryFilter">Категория</label>
+                <select id="categoryFilter" class="filter-select">
+                    <option value="all">Все категории</option>
+                    <option value="ceramics">Керамика</option>
+                    <option value="jewelry">Украшения</option>
+                    <option value="textile">Текстиль</option>
+                    <option value="wood">Дерево</option>
+                    <option value="decor">Декор</option>
+                    <option value="clothing">Одежда</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="priceFilter">Цена до</label>
+                <select id="priceFilter" class="filter-select">
+                    <option value="all">Любая</option>
+                    <option value="2000">2000 ₽</option>
+                    <option value="5000">5000 ₽</option>
+                    <option value="10000">10000 ₽</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sortFilter">Сортировка</label>
+                <select id="sortFilter" class="filter-select">
+                    <option value="popular">По популярности</option>
+                    <option value="price-low">Сначала дешевые</option>
+                    <option value="price-high">Сначала дорогие</option>
+                    <option value="new">Сначала новые</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные товары -->
+    <section class="container">
+        <div class="products-header">
+            <h2 class="section-title">Популярные товары</h2>
+            <a href="#" class="view-all">Смотреть все →</a>
+        </div>
+        <p class="section-subtitle">Изделия, созданные с любовью и мастерством</p>
+        
+        <div class="products" id="productsContainer">
+            <!-- Товары будут добавляться динамически -->
+        </div>
+    </section>
+
+    <!-- О компании и подписка -->
+    <section class="about-newsletter">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Ремесленная ярмарка</h2>
+                    <p>Платформа для покупки и продажи уникальных изделий ручной работы от талантливых мастеров со всей страны.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="newsletter">
+                    <h3>Подпишитесь на новости</h3>
+                    <p>Получайте информацию о новых товарах и специальных предложениях.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" class="newsletter-input" placeholder="Ваш email" required>
+                        <button type="submit" class="newsletter-btn">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Покупателям</h3>
+                    <ul>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товара</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Продавцам</h3>
+                    <ul>
+                        <li><a href="#">Начать продавать</a></li>
+                        <li><a href="#">Правила площадки</a></li>
+                        <li><a href="#">Помощь продавцам</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Компания</h3>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Мы в соцсетях</h3>
+                    <ul>
+                        <li><a href="#">ВКонтакте</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Ремесленная ярмарка. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Корзина -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Корзина</h3>
+            <button class="close-cart" id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Товары в корзине будут добавляться динамически -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Итого:</span>
+                <span id="cartTotal">0 ₽</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <!-- Иконка корзины -->
+    <div class="cart-icon" id="cartIcon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Уведомление -->
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notificationText">Товар добавлен в корзину</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
